@@ -9,4 +9,3 @@ download.addEventListener('click', (e) => {
     const seriesValue = series.options[series.selectedIndex].text;
     window.open(`http://d9.o2tvseries.club/${seriesValue}/Season 0${season}/${seriesValue} - S0${season}E0${episode} (TvShows4Mobile.Com).mp4`, '_blank');
 });
-
