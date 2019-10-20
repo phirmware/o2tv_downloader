@@ -8,6 +8,7 @@
     <title>o2tv Downloader</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -23,6 +24,8 @@
                     <select class="form-control" id="elementId">
                         <option value="Young Sheldon">Young Sheldon</option>
                         <option value="Lucifer">Lucifer</option>
+                        <option value="Suits">Suits</option>
+                        <option value="Family Guy">Family Guy</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -34,13 +37,22 @@
                     <input class="form-control"  type="text" id="episode">
                 </div>
                 <div class="form-group">
-                    <button id="download" class="btn btn-primary btn-block">Download</button>
+                    <button id="download" class="btn btn-primary btn-block">View</button>
                 </div>
             </div>
             <div class="col-lg-2"></div>
         </div>
     </div>
+    <div class="vid" id="video_container_right">
+        <video id="screen_right" autoplay controls src=""></video>
+        <div class="vid_base bg-primary"></div>
+    </div>
+    <div class="vid" id="video_container_left">
+        <video id="screen_left" autoplay controls src=""></video>
+        <div class="vid_base bg-primary"></div>
+    </div>
 
+    <script src="./series_list.js"></script>
 
     <script src="./script.js"></script>
     <!-- jQuery library -->

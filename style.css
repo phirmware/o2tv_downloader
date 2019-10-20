@@ -1,0 +1,49 @@
+.vid {
+    background: #242323;
+}
+
+@media(max-width: 610px) {
+    .vid{
+        width: 75vw !important;
+    }
+}
+
+video{
+    background: black;
+}
+
+#video_container_right {
+    position: fixed;
+    bottom: -300px;
+    right: 50px;
+    height: 30vh;
+    width: 30vw;
+    transition: 1s;
+}
+
+#video_container_left {
+    position: fixed;
+    bottom: -300px;
+    left: 50px;
+    height: 30vh;
+    width: 30vw;
+    transition: 1s;
+}
+
+#screen_right {
+    width: 100%;
+    height: 80%;
+}
+
+#screen_left {
+    width: 100%;
+    height: 80%;
+}
+
+.hide {
+    display: none;
+}
+
+.vid_base {
+    background: lightblue;
+}
