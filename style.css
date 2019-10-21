@@ -6,6 +6,18 @@
     .vid{
         width: 75vw !important;
     }
+
+    .alert{
+        width: 100vw !important;
+    }
+}
+
+.alert{
+    position: fixed !important;
+    bottom: -100px;
+    margin: 0px auto;
+    left: 0;
+    transition: 1s;
 }
 
 video{

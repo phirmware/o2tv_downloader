@@ -4,6 +4,8 @@ const vidScreenRight = document.getElementById('screen_right');
 const vidScreenLeft = document.getElementById('screen_left');
 const vidContainerRight = document.getElementById('video_container_right');
 const vidContainerLeft = document.getElementById('video_container_left');
+const alertToast = document.getElementsByClassName('alert-danger')[0];
+let alertCount = 0;
 
 const list = movieList();
 
@@ -13,6 +15,16 @@ for(let i = 0; i < list.length; i ++) {
     series.insertAdjacentHTML('beforeend',`<option value="${list[i]}">${list[i]}</option>`);
 }
 
+
+function loadAlert() {
+    if(alertCount >= 2) {
+        alertToast.style.bottom = '0px';
+    }
+    setTimeout(() => {
+        alertToast.style.bottom = '-200px';
+        alertCount = 0;
+    }, 5000);
+}
 
 play.addEventListener('click', (e) => {
     const season = document.getElementById('season').value;
@@ -42,8 +54,12 @@ vidScreenRight.addEventListener('loadeddata', () => {
 
 vidScreenLeft.addEventListener('error', () => {
     vidContainerLeft.style.bottom = '-300px';
+    alertCount ++;
+    loadAlert();
 });
 
 vidScreenRight.addEventListener('error', () => {
     vidContainerRight.style.bottom = '-300px';
+    alertCount ++;
+    loadAlert();
 });
