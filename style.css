@@ -7,6 +7,14 @@
         width: 75vw !important;
     }
 
+    #video_container_left{
+        height: 25vh !important;
+    }
+
+    #video_container_right{
+        height: 25vh !important;
+    }
+
     .alert{
         width: 100vw !important;
     }
@@ -28,7 +36,7 @@ video{
     position: fixed;
     bottom: -300px;
     right: 50px;
-    height: 30vh;
+    height: 35vh;
     width: 30vw;
     transition: 1s;
 }
@@ -37,7 +45,7 @@ video{
     position: fixed;
     bottom: -300px;
     left: 50px;
-    height: 30vh;
+    height: 35vh;
     width: 30vw;
     transition: 1s;
 }

@@ -4,6 +4,8 @@ function movieList() {
         'Girl Meets World',
         '2 Broke Girls',
         'Blackish',
+        'Naruto',
+        'Jane The Virgin',
         'How I Met Your Mother',
         'Pure',
         'Hanna',
@@ -89,5 +91,6 @@ function movieList() {
         'Homecoming',
         'Dark Heart',
         'Krypton',
+        'Dexter',
     ]
 }

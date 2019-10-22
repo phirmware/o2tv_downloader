@@ -9,8 +9,6 @@ let alertCount = 0;
 
 const list = movieList();
 
-console.log(list);
-
 for(let i = 0; i < list.length; i ++) {
     series.insertAdjacentHTML('beforeend',`<option value="${list[i]}">${list[i]}</option>`);
 }
